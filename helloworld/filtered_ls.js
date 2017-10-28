@@ -49,9 +49,12 @@ function filter_files(){
     }
 
     for(i = 0; i < files_array.length; i++){
-      if (path.extname(files_array[i]) == process.argv[3]) {
-        console.log(files_array[i])
-      }
+
+       if (path.extname(files_array[i]) == '.' + process.argv[3]) {
+         console.log(files_array[i])
+       }
+      // console.log(process.argv[3])
+      // console.log(path.extname(files_array[i]))
     }
 
   })

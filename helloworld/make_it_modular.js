@@ -6,9 +6,7 @@
 //   except pass it to your module where you can do what you need to make your
 //   filter work.
 
-// passing to the exported function: directory name, filename extension string, a call back function
-// what do they mean by directory name? directory path? probably...
-
+// this will only work when you are using node module to export a single function
 var make_it_modular = require('./make_it_modular_lib')
 
 // /path/to/dir
